@@ -9,32 +9,40 @@ To write a Python program to check the relation between two numbers — whether 
 ---
 
 ### ALGORITHM
+Start
 
-1. Begin the program.  
-2. Use `eval()` to get two numbers (`num1` and `num2`) from the user.  
-3. Define a lambda function `max` that takes two arguments `x` and `y`.  
-4. The lambda function compares the numbers and prints:
-   - If `x > y`, then it prints: "`num2` is smaller than `num1`".
-   - Otherwise, it prints: "`num1` is smaller than `num2`".
-5. Call the lambda function by passing `num1` and `num2` as arguments.  
-6. Terminate the program.
+Read a and b
 
----
+If a > b, then:
+
+Set max = a
+
+Else:
+
+Set max = b
+
+Print "The greatest number is:", max
+
+End
+
+
 
 ### PROGRAM
 
 ```
+Max = lambda a, b : a if(a > b) else b
+ 
+input1=int(input())
+input2=int(input())
+print("The greatest number is:",Max(input1,input2))
 
 ```
 
 ### OUTPUT
 
-```
+![image](https://github.com/user-attachments/assets/29c5305c-b3f1-47f2-adfe-96444038c81d)
 
-```
 
 ### RESULT
+Thus the Python program to check the relation between two numbers — whether one number is greater than, equal to, or lesser than another — using a lambda function is successfully verified.
 
-```
-
-```
